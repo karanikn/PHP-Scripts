@@ -104,7 +104,7 @@ function send_smtp_email($toEmail,$subject, $message_body, $cc="", $bcc=""){
 function send_normal_email($toEmail,$subject, $message_body, $cc="", $bcc=""){
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=UTF8' . "\r\n";
 
     // Additional headers
     $headers .= 'From: '._FROM_EMAIL_NAME.' <'.$toEmail.'>' . "\r\n";
